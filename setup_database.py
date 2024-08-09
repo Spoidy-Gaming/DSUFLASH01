@@ -144,10 +144,10 @@ INSERT INTO contact (phone, email) VALUES
 
 cursor.execute('''
 INSERT INTO building_images (building_name, image_link) VALUES 
-('Academic Block', 'link_to_academic_block_image'),
-('Hospital Block', 'link_to_hospital_block_image'),
-('Hostel Block', 'link_to_hostel_block_image'),
-('Engineering Block', 'link_to_engineering_block_image');
+('Academic Block', 'static/images/academic_block.jpeg'),
+('Hospital Block', 'static/images/hospital_block.jpeg'),
+('Hostel Block', 'static/images/hostel_block.jpeg'),
+('Engineering Block', 'static/images/engineering_block.jpeg');
 ''')
 
 cursor.execute('''
