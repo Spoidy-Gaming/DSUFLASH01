@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 import sqlite3
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 def connect_db():
     conn = sqlite3.connect('college_chatbot.db')  # Name of the SQLite database file
@@ -104,5 +104,5 @@ def query():
 
     return jsonify({'response': response})
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     app.run(debug=True)
