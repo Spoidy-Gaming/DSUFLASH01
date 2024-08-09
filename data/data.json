@@ -1,151 +1,114 @@
 {
-    "courses": {
-        "computer_science": {
-            "name": "Computer Science",
-            "fees": "130,000 - 200,000",
-            "facilities": "Lab access, Online resources"
+    "courses": [
+        {
+            "name": "B.Tech - Computer Science and Engineering",
+            "school": "School of Engineering & Technology",
+            "duration": "4 years",
+            "fee": "₹75,000-₹1,12,500 per semester",
+            "facilities": "Advanced Programming Labs"
         },
-        "artificial_intelligence_data_science": {
-            "name": "Artificial Intelligence and Data Science",
-            "fees": "130,000 - 200,000",
-            "facilities": "AI labs, Research projects"
+        {
+            "name": "B.Tech - Artificial Intelligence & Data Science",
+            "school": "School of Engineering & Technology",
+            "duration": "4 years",
+            "fee": "₹75,000-₹1,12,500 per semester",
+            "facilities": "AI & Data Science Labs"
         },
-        "information_technology": {
-            "name": "Information Technology",
-            "fees": "130,000 - 200,000",
-            "facilities": "IT labs, Software development resources"
+        {
+            "name": "B.Tech - Information Technology",
+            "school": "School of Engineering & Technology",
+            "duration": "4 years",
+            "fee": "₹75,000-₹1,12,500 per semester",
+            "facilities": "IT Infrastructure and Labs"
         },
-        "cyber_security": {
-            "name": "Computer Science and Engineering with Cyber Security",
-            "fees": "130,000 - 200,000",
-            "facilities": "Cybersecurity labs, Research projects"
+        {
+            "name": "B.Tech - Mechanical Engineering",
+            "school": "School of Engineering & Technology",
+            "duration": "4 years",
+            "fee": "₹50,000 per semester",
+            "facilities": "State-of-the-Art Workshops"
         },
-        "ai_ml": {
-            "name": "Artificial Intelligence and Machine Learning",
-            "fees": "130,000 - 200,000",
-            "facilities": "AI labs, Research projects"
+        {
+            "name": "B.Sc Nursing",
+            "school": "School of Nursing",
+            "duration": "4 years",
+            "fee": "₹2,00,000 per year",
+            "facilities": "Modern Nursing Labs"
         },
-        "iot": {
-            "name": "Computer Science Engineering with IoT",
-            "fees": "100,000",
-            "facilities": "IoT labs, Research projects"
+        {
+            "name": "B.P.T. Bachelor of Physiotherapy",
+            "school": "School of Physiotherapy",
+            "duration": "4 years",
+            "fee": "₹1,50,000 per year",
+            "facilities": "Physiotherapy Equipment"
         },
-        "electronics_communication": {
-            "name": "Electronics and Communication Engineering",
-            "fees": "100,000",
-            "facilities": "ECE labs, Research projects"
+        {
+            "name": "B.Pharm",
+            "school": "School of Pharmacy",
+            "duration": "4 years",
+            "fee": "₹1,75,000 per year",
+            "facilities": "Pharmacy Labs and Equipment"
         },
-        "agricultural_engineering": {
-            "name": "Agricultural Engineering",
-            "fees": "100,000",
-            "facilities": "Agricultural labs, Field research"
+        {
+            "name": "B.Arch",
+            "school": "School of Architecture",
+            "duration": "5 years",
+            "fee": "₹50,000 per semester",
+            "facilities": "Design Studios"
         },
-        "biomedical_engineering": {
-            "name": "Biomedical Engineering",
-            "fees": "100,000",
-            "facilities": "Biomedical labs, Research projects"
+        {
+            "name": "B.Com",
+            "school": "School of Arts and Science",
+            "duration": "3 years",
+            "fee": "₹20,000 - ₹30,000 per semester",
+            "facilities": "Commerce Labs"
         },
-        "biotechnology": {
-            "name": "Biotechnology",
-            "fees": "100,000",
-            "facilities": "Biotech labs, Research projects"
-        },
-        "electrical_electronics_engineering": {
-            "name": "Electrical and Electronics Engineering",
-            "fees": "100,000",
-            "facilities": "EEE labs, Research projects"
-        },
-        "mechanical_engineering": {
-            "name": "Mechanical Engineering",
-            "fees": "100,000",
-            "facilities": "Mechanical labs, Research projects"
-        },
-        "dialysis_technology": {
-            "name": "Dialysis Technology",
-            "fees": "125,000",
-            "facilities": "Dialysis labs, Internship"
-        },
-        "optometry": {
-            "name": "Optometry",
-            "fees": "125,000",
-            "facilities": "Optometry labs, Internship"
-        },
-        "physician_assistant": {
-            "name": "Physician Assistant",
-            "fees": "150,000",
-            "facilities": "PA labs, Internship"
-        },
-        "radiography_imaging_technology": {
-            "name": "Radiography and Imaging Technology",
-            "fees": "150,000",
-            "facilities": "Radiography labs, Internship"
-        },
-        "cardio_pulmonary_perfusion_technology": {
-            "name": "Cardio Pulmonary and Perfusion Technology",
-            "fees": "175,000",
-            "facilities": "CPPT labs, Internship"
-        },
-        "operation_theatre_anesthesia_technology": {
-            "name": "Operation Theatre and Anesthesia Technology",
-            "fees": "200,000",
-            "facilities": "OTAT labs, Internship"
-        },
-        "cardio_vascular_technology": {
-            "name": "Cardio Vascular Technology",
-            "fees": "200,000",
-            "facilities": "CVT labs, Internship"
-        },
-        "medical_laboratory_technology": {
-            "name": "Medical Laboratory Technology",
-            "fees": "125,000",
-            "facilities": "MLT labs, Internship"
-        },
-        "critical_care_technology": {
-            "name": "Critical Care Technology",
-            "fees": "100,000",
-            "facilities": "CCT labs, Internship"
-        },
-        "accident_emergency_care_technology": {
-            "name": "Accident and Emergency Care Technology",
-            "fees": "100,000",
-            "facilities": "AECT labs, Internship"
-        },
-        "agriculture_honors": {
-            "name": "Agriculture (Honors)",
-            "fees": "175,000",
-            "facilities": "Agriculture labs, Field research"
-        },
-        "physiotherapy": {
-            "name": "Bachelor of Physiotherapy",
-            "fees": "125,000",
-            "facilities": "Physiotherapy labs, Internship"
-        },
-        "pharmacy": {
-            "name": "Bachelor of Pharmacy",
-            "fees": "175,000",
-            "facilities": "Pharmacy labs, Internship"
+        {
+            "name": "B.C.A.",
+            "school": "School of Arts and Science",
+            "duration": "3 years",
+            "fee": "₹20,000 - ₹30,000 per semester",
+            "facilities": "Computer Labs"
         }
-    },
-    "hostel": {
-        "single_room": {
-            "fees": "85,000",
-            "facilities": "Single bed, Study table, Wi-Fi, Common Bathroom"
+    ],
+    "infrastructure": "Modern classrooms, well-equipped labs, libraries, and sports facilities.",
+    "hostel": [
+        {
+            "name": "Boys Hostel",
+            "facilities": "Wi-Fi, 24/7 Security, Gym",
+            "fee": "₹50,000 per year"
         },
-        "double_room": {
-            "fees": "125,000",
-            "facilities": "Two beds, Study tables, A/C, Wi-Fi, Attached Bathroom"
-        },
-        "triple_room": {
-            "fees": "75,000",
-            "facilities": "Three beds, Study tables, Common Bathroom"
+        {
+            "name": "Girls Hostel",
+            "facilities": "Wi-Fi, 24/7 Security, Gym",
+            "fee": "₹50,000 per year"
         }
-    },
-    "infrastructure": "Our college has state-of-the-art labs, libraries, sports facilities, and more.",
+    ],
     "location": "NH-45, Trichy Chennai Trunk Road Samayapuram, near Samayapuram Toll Plaza, Tiruchirappalli, Tamil Nadu 621112.",
     "application_link": "https://admissions.dsuniversity.ac.in/",
     "contact": {
-        "admissions_office": "1800 532 2222",
-        "support": "enquiry@dsuniversity.ac.in",
-        "phone": "70944 58021, 70944 58022"
+        "phone": "+91-1234567890",
+        "email": "info@dsu.edu"
+    },
+    "building_images": [
+        {
+            "building_name": "Academic Block",
+            "image_link": "link_to_academic_block_image"
+        },
+        {
+            "building_name": "Hospital Block",
+            "image_link": "link_to_hospital_block_image"
+        },
+        {
+            "building_name": "Hostel Block",
+            "image_link": "link_to_hostel_block_image"
+        },
+        {
+            "building_name": "Engineering Block",
+            "image_link": "link_to_engineering_block_image"
+        }
+    ],
+    "map": {
+        "map_link": "https://maps.app.goo.gl/7Y2khEtZVPEZ2ZNK7"
     }
 }
