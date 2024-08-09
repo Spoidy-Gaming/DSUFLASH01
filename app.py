@@ -1,11 +1,32 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
+import re
 import sqlite3
+from twilio.rest import Client
 
 app = Flask(__name__)
 
-def connect_db():
-    conn = sqlite3.connect('college_chatbot.db')  # Name of the SQLite database file
-    return conn
+account_sid = 'ACd99b87f144e524f1f3f85c00b7a3aa9a'
+auth_token = '075cd9dd1401bd906fb8455dcbd44a19'
+twilio_phone_number = 'whatsapp:+14155238886'  # Replace with your Twilio number
+twilio_client = Client(account_sid, auth_token)
+
+def query_db(query, args=(), one=False):
+    conn = sqlite3.connect('college_chatbot.db')
+    cursor = conn.cursor()
+    cursor.execute(query, args)
+    result = cursor.fetchall()
+    conn.close()
+    return (result[0] if result else None) if one else result
+
+@app.route('/send_whatsapp', methods=['POST'])
+def send_whatsapp():
+    phone_number = request.form.get('phone_number')
+    message_body = request.form.get('message')
+    try:
+        message_sid = send_whatsapp_message(phone_number, message_body)
+        return jsonify({"status": "Message sent", "sid": message_sid})
+    except Exception as e:
+        return jsonify({"status": "Failed to send message", "error": str(e)})
 
 # Function to respond to various queries
 def respond_to_query(query):
@@ -94,15 +115,15 @@ def respond_to_query(query):
 
     conn.close()
 
-@app.route('/query', methods=['POST'])
-def query():
-    data = request.json
-    query_text = data.get('query', '').strip()
+@app.route('/')
+def index():
+    return render_template('index.html')
 
-    # Get the response from the respond_to_query function
-    response = respond_to_query(query_text)
-
-    return jsonify({'response': response})
+@app.route('/chat', methods=['POST'])
+def chat():
+    query = request.form.get('query').lower()
+    response = get_response(query)
+    return jsonify(response)
 
 if __name__ == '_main_':
     app.run(debug=True)
