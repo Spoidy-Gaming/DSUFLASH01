@@ -26,8 +26,13 @@
         header img {
             display: block;
             margin: 0 auto;
-            width: 120px;
+            width: 200px;
             height: auto;
+            border-radius: 50%;
+            transition: transform 0.5s;
+        }
+        header img:hover {
+            transform: rotate(360deg);
         }
         .container {
             margin-top: 50px;
@@ -82,11 +87,32 @@
         .three-d:hover {
             transform: rotateY(15deg) rotateX(15deg);
         }
+        .logo {
+            width: 200px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+        .logo:hover {
+            transform: rotateY(360deg);
+        }
+        /* Center the logo in the page */
+        .logo-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://www.dsuniversity.ac.in/images/logo.png" alt="College Logo" class="fade-in three-d">
+        <div class="logo-center">
+            <img src="static/DSULogo.png" alt="College Logo" class="logo fade-in three-d">
+        </div>
         <h1 class="fade-in">DSU College Chatbot</h1>
     </header>
     <div class="container">
